@@ -7,5 +7,4 @@ let TaskSchema = new Schema({
 });
 
 
-// Export the model
 module.exports = mongoose.model('Task', TaskSchema);

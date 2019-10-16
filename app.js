@@ -7,7 +7,7 @@ const cors = require('cors');
 const task = require('./routes/task.route');
 const app = express();
 
-mongoose.connect('mongodb://localhost/tasks-db',{ useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost/tasks-db', { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.Promise = global.Promise;
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
